@@ -1,0 +1,33 @@
+@font-face{
+  font-family:'SSP';
+  src:url('SSP.otf');
+}
+
+body,input,button{
+  background-color: black;
+  color: white;
+  font-family:'SSP', sans-serif;
+}
+
+button{
+  background-color: white;
+  color: black;
+}
+
+#err{
+  background-color: #AA0000;
+  border-radius: 10px;
+  text-align:center;
+}
+
+b{
+  color:#AA0000;
+}
+
+a{
+  color: #FFAA00;
+}
+
+#afterChoose, #textarea{
+  visibility: hidden;
+}

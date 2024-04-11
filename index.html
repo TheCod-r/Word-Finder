@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Word Finder!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="initial">
+      <h3>You there, choose 1 of the following.</h3>
+      <button onclick="clicked(58112)">58,112 words</button>
+      <button onclick="clicked(466550)">466,550 words</button>
+    </div>
+    <div id="afterChoose">
+     <h3>Important Notes:</h3>
+     <ul>
+      <li>The tutorial for commands can be found here: <a href="command.html">Command Tutorial</a></li>
+      <li>Here&#39s a good RegEx tutorial: <a href="https://www.codeproject.com/Articles/9099/The-30-Minute-Regex-Tutorial" target="_blank">The 30-Minute RegEx Tutorial</a></li>
+      <li>Also, <a href="https://thecod-r.github.io/Old-Word-Finder/" target="_blank">here</a>&#39;s the older version of this Word Finder :)</li>
+      <li>Well, go ahead and SEARCH!</li>
+    </ul>
+    <label>Command: </label>
+    <input type="text" id="command" placeholder="e.g. a" style="text-transform:lowercase;"/> OR <label>Regex: </label><input type="text" id="regex" placeholder="e.g. a"/><br>
+    <p id="err"></p>
+    <input type="submit" value="Search" onclick="search();"/>
+    <p id="words"></p>
+    <textarea id="textarea"></textarea>
+   </div>
+  </body>
+  <script src="script.js"></script>
+</html>

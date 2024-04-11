@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Command Tutorial | Word Finder!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Command tutorial!</h1>
+    <p>Here, you'll learn how to use commands to search up words in <strong>Word Finder!</strong> Let's get right to it.</p>
+    <br>
+    <h2>Things you need to know first</h2>
+    <p>A command can be used to tell the program <i>how</i> to filter the words. You can filter them based on letter(s), word length, and more!</p>
+    <p>When I say "filter", that means specifying which words will be included in your search result.</p>
+    <h2>Basics</h2>
+    <p>To filter a word with its length, simply type the word length you're looking for. Type <b>3</b> to search for words with 3 letters!</p>
+    <p>To filter a word with letter(s) present, type the letters! If you want every word with the letter <b>z</b> in it, simply type the letter: <b>z</b>.</p>
+    <p>IMPORTANT: if you type <b>ab</b>, the results will be words with the letters <b>a</b> and <b>b</b>, <i>in that order</i>. Here are some examples:</p>
+    <ul>
+      <li>"banana" is <strong>not</strong> included in the command <b>ab</b>.</li>
+      <li>"ambush" is <strong>not</strong> included in the command <b>ab</b>.</li>
+      <li>"cabbage" is included in the command <b>ab</b>.</li>
+    </ul>
+    <p>To search for a letter(s) in a SPECIFIC position, type the letter(s) and then the position! As an example, the commands <b>b3</b> do the same thing - searching for words whose third letter is <b>b</b>. For multiple letters, we use the position where the first character is located. As an example, the command <b>un1</b> searches for words that begin with <b>un</b>! NOTE: the command <b>u1n</b> doesn't work.</p>
+    <p>To search from the back of the word, use <strong>negative indexes</strong>. <b>-1</b> refers to the last letter of a word, <b>-2</b> refers to the second-last letter of the word, and so on. For example, the command <b>w-1</b> searches for words that end with w!</p>
+    <p>For searching the occurences of letter(s) in a word, we use the desired occurences followed by the letter(s)! For example, the command <b>3a</b> searches for words with exactly 3 letter <strong>a</strong>-s.</p>
+    <h2>More Advanced Stuff</h2>
+    <p>We can combine 2 or more commands using the characters <b>&</b> and <b>,</b>!</p>
+    <p>We use <b>&</b> to only filter words that fulfill <strong>all</strong> of the commands. As an example, the command <b>a&b</b> only filters in words with both the letter <strong>a</strong> and <strong>b</strong>! Note that a word's letter order doesn't affect this, for instance "brackets" will be included.</p>
+    <p>Meanwhile, <b>,</b> is used to filter in words that fulfill <strong>at least one</strong> of the commands! You can also think of it as combining the words that fulfill the first command with the ones that fulfill the second command and so on. For instance, the command <b>a,b</b> combines words with the letter a and words with the letter b, so words like "car" and "bucket" will be included!</p>
+    <h2>Ending, if that's what you call it</h2>
+    <p>Enjoy using <strong>Word Finder</strong>, I hope you like it!</p>
+    <p><a href="index.php">Back to the searching page</a></p>
+  </body>
+</html>
